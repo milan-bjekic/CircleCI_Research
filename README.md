@@ -33,3 +33,10 @@ if we did not, we would need to add it:
 git remote add origin https://github.com/milan-bjekic/CircleCI_Research.git
 ```
 You will be asked to login for the push.
+
+# Setting up circleci yaml file
+```
+cd C:\Users\milanb\dev\new_03\circle_ci_01\CircleCI_Research
+mkdir .circleci
+touch .circleci/config.yml
+```
