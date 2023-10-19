@@ -23,7 +23,8 @@ python .\main_test.py
 # Commit and push the code changes you made
 ```
 cd C:\Users\milanb\dev\new_03\circle_ci_01\CircleCI_Research
-git commit -am "Initial commit"
+git add .
+git commit -m "Initial commit"
 git push -u origin main
 ```
 We did not have to add remote origin because we cloned the repo,
