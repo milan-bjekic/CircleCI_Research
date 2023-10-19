@@ -10,10 +10,25 @@ git clone https://github.com/milan-bjekic/CircleCI_Research.git
 
 # Run the code locally
 ```
+cd C:\Users\milanb\dev\new_03\circle_ci_01\CircleCI_Research
 python main.py
 ```
 
 # Run the test code locally
 ```
+cd C:\Users\milanb\dev\new_03\circle_ci_01\CircleCI_Research
 python .\main_test.py
 ```
+
+# Commit and push the code changes you made
+```
+cd C:\Users\milanb\dev\new_03\circle_ci_01\CircleCI_Research
+git commit -am "Initial commit"
+git push -u origin main
+```
+We did not have to add remote origin because we cloned the repo,
+if we did not, we would need to add it:
+```
+git remote add origin https://github.com/milan-bjekic/CircleCI_Research.git
+```
+You will be asked to login for the push.
