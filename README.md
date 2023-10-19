@@ -40,3 +40,11 @@ cd C:\Users\milanb\dev\new_03\circle_ci_01\CircleCI_Research
 mkdir .circleci
 touch .circleci/config.yml
 ```
+
+# Commit and push the code changes you made
+```
+cd C:\Users\milanb\dev\new_03\circle_ci_01\CircleCI_Research
+git add .
+git commit -m "circleci configuration"
+git push
+```
