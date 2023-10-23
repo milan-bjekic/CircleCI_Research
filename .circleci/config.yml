@@ -25,3 +25,14 @@ workflows:
       - test:
           requires:
             - build
+
+  scheduled-workflow:
+    triggers:
+      - schedule:
+          cron: "52,53,54,55,56,57,58,59 * * * *"
+          filters:
+            branches:
+              only: main
+
+    jobs:
+      - build
