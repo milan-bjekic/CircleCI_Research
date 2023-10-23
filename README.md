@@ -48,3 +48,4 @@ git add .
 git commit -m "circleci configuration"
 git push
 ```
+You can now tun the workflow in CircleCI Dashboard and it should be success
