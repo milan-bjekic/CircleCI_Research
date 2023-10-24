@@ -17,6 +17,11 @@ jobs:
       - checkout
       - run: python3 main_test.py
 
+parameters:
+  run-schedule:
+    type: boolean
+    default: false
+
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
@@ -26,13 +31,7 @@ workflows:
           requires:
             - build
 
-  scheduled-workflow:
-    triggers:
-      - schedule:
-          cron: "52,53,54,55,56,57,58,59 * * * *"
-          filters:
-            branches:
-              only: main
-
-    jobs:
-      - build
+  scheduled_workflow:
+    when: << pipeline.parameters.run-schedule >>
+      jobs:
+        - build
