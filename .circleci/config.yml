@@ -33,5 +33,5 @@ workflows:
 
   scheduled_workflow:
     when: << pipeline.parameters.run-schedule >>
-      jobs:
-        - build
+    jobs:
+      - build
